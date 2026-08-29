@@ -6,40 +6,16 @@
 <title>Условия участия — HOMtology</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>
-:root{
-  --bg:#F5F1E8;--paper:#FBF9F4;--ink:#192B25;--muted:#66736d;
-  --green:#18372D;--gold:#B79260;--line:#DCD6CA;--white:#fff;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
-a{color:var(--green)}
-.wrap{width:min(920px,calc(100% - 36px));margin:auto}
-header{border-bottom:1px solid var(--line);background:rgba(245,241,232,.96);position:sticky;top:0;z-index:20}
-.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{text-decoration:none;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:27px}
-.brand b{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.04em}
-.back{text-decoration:none;font-weight:650;font-size:14px}
-main{padding:70px 0 90px}
-.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:var(--green)}
-h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500}
-h1{font-size:52px;line-height:1.05;letter-spacing:-1.4px;margin:12px 0 18px}
-h2{font-size:29px;line-height:1.2;margin:42px 0 10px}
-.lead{font-size:19px;color:var(--muted)}
-.meta{font-size:13px;color:var(--muted);margin:14px 0 35px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px;margin:26px 0}
-.notice{border-left:3px solid var(--gold);padding:15px 18px;background:rgba(255,255,255,.48);border-radius:0 14px 14px 0}
-ul{padding-left:22px}
-li{margin:7px 0}
-hr{border:0;border-top:1px solid var(--line);margin:42px 0}
-footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:13px}
-@media(max-width:620px){h1{font-size:39px}main{padding-top:48px}.nav{min-height:66px;height:auto;flex-wrap:wrap;padding:12px 0}.brand{font-size:24px}.back{font-size:13px}}
+:root{--forest:#4C5A3D;--cream:#F3EFEA;--sage:#DCE1D3;--pink:#E7B3BA;--taupe:#A89F91;--ink:#283024;--muted:#62675e;--paper:#FAF8F4;--line:rgba(76,90,61,.22);--focus:#9b4955}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}a{color:var(--forest);text-underline-offset:3px}.wrap{width:min(920px,calc(100% - 48px));margin:auto}.site-header{border-bottom:1px solid var(--line);background:rgba(243,239,234,.96);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}.nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:block;width:206px}.brand img{display:block;width:206px;height:auto}.back{text-decoration:none;font-weight:700;font-size:13px;padding:12px 0}main{padding:76px 0 100px}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--forest)}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500}h1{font-size:clamp(42px,6vw,58px);line-height:1.05;letter-spacing:-.03em;margin:14px 0 20px}h2{font-size:30px;line-height:1.2;margin:46px 0 12px}.lead{font-size:19px;color:var(--muted);max-width:780px}.meta{font-size:13px;color:var(--muted);margin:14px 0 38px}.card{background:var(--paper);border:1px solid var(--line);padding:28px;margin:30px 0}.notice{border-left:3px solid var(--pink);padding:18px 22px;background:var(--sage)}ul{padding-left:24px}li{margin:8px 0}hr{border:0;border-top:1px solid var(--line);margin:44px 0}footer{border-top:1px solid var(--line);padding:30px 0 42px;color:var(--muted);font-size:13px}a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+@media(max-width:620px){.wrap{width:min(100% - 28px,920px)}.site-header{position:relative}.nav{min-height:70px}.brand,.brand img{width:170px}.back{font-size:12px;text-align:right}main{padding:54px 0 76px}h1{font-size:clamp(38px,12vw,46px)}h2{font-size:28px}.lead{font-size:17px}.notice,.card{padding:20px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header>
+<header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="index.html"><b>HOM</b>tology</a>
+    <a class="brand" href="index.html" aria-label="HOMtology — на главную"><img src="assets/images/homtology-logo.png" width="1983" height="793" alt="HOMtology — Rental Home Functionality Standard"></a>
     <a class="back" href="index.html">← Вернуться на сайт</a>
   </div>
 </header>
